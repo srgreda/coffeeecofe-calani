@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Calani | Café de Especialidad • Cochabamba, Bolivia</title>
+  <meta name="description" content="Coffee Calani - Tostaduría de Especialidad & Micro-lotes de Altura. Cosechado en San José, Cochabamba. Exportación a toda Bolivia y el mundo. Diseño Minimalista & Cottagecore.">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif de Lujo) & Plus Jakarta Sans (Minimalist UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet: Minimalist & Cottagecore Pastel -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Tropical Finca Fixed Background & Dreamy Pastel Mist Overlay -->
+  <div class="finca-bg-fixed" aria-hidden="true"></div>
+  <div class="pastel-mist-overlay" aria-hidden="true"></div>
+
+  <!-- Top Subtle Botanical Announcement Bar -->
+  <aside class="top-pastel-bar" aria-label="Aviso de origen">
+    <span>Café de Finca San José, Cochabamba</span>
+    <span class="dot">•</span>
+    <span>100% Arábica de Estricta Altura (1,750 - 1,950 msnm)</span>
+    <span class="dot">•</span>
+    <span>Envíos a Toda Bolivia y Exportación Internacional</span>
+  </aside>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR (MINIMALIST FLOATING PILL)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container-minimal">
+        <!-- Brand Logo & Clean Editorial Name -->
+        <a href="#inicio" class="nav-brand">
+          <img src="assets/images/logo_brand.jpg" alt="Logo oficial Coffee Calani" class="nav-brand-logo">
+          <div>
+            <div class="nav-brand-title">COFFEE CALANI</div>
+            <div class="nav-brand-sub">San José • Cochabamba</div>
+          </div>
+        </a>
+
+        <!-- Minimalist Links -->
+        <ul class="nav-menu" id="nav-menu-list">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#eventos" class="nav-link">Eventos & Concursos</a></li>
+          <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+          <li><a href="#finca" class="nav-link">La Finca</a></li>
+          <li><a href="#exportacion" class="nav-link">Exportación</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+
+        <!-- Action Tools: Currency Switch, Cart Drawer, Direct WhatsApp -->
+        <div class="nav-actions">
+          <div class="currency-switch" onclick="toggleCurrency()" title="Cambiar divisa">
+            <button type="button" class="curr-btn active" id="curr-pill-bob">Bs.</button>
+            <button type="button" class="curr-btn" id="curr-pill-usd">$ USD</button>
+          </div>
+
+          <!-- Cart Trigger -->
+          <button type="button" class="btn-nav-cart" onclick="openCartDrawer()" aria-label="Abrir canasta de compras">
+            <i class="fas fa-bag-shopping" style="font-size:0.95rem;"></i>
+            <span class="cart-count-badge" id="cart-count-badge">0</span>
+          </button>
+
+          <!-- WhatsApp Direct Link -->
+          <a href="https://wa.me/59167992051?text=Hola%20Coffee%20Calani,%20quisiera%20consultar%20sobre%20su%20caf%C3%A9%20de%20especialidad" target="_blank" class="btn-nav-whatsapp">
+            <i class="fab fa-whatsapp"></i> <span>67992051</span>
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button class="nav-hamburger" id="mobile-hamburger" aria-label="Abrir navegación">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: HERO (TITULO & DESCRIPCION MINIMALISTA & EDITORIAL)
+         ========================================================================== -->
+    <section class="hero-minimal" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Editorial Typography & Brand Story -->
+          <div>
+            <div class="hero-tag-pills">
+              <span class="tag-pill tag-pill-sage">
+                <i class="fas fa-seedling"></i> Origen San José, Cochabamba
+              </span>
+              <span class="tag-pill tag-pill-peach">
+                <i class="fas fa-award"></i> Calidad de Exportación
+              </span>
+              <span class="tag-pill tag-pill-ivory">
+                <i class="fas fa-mountain"></i> 1,750 - 1,950 msnm
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              Café de Altura <em>cultivado con alma</em> en Bolivia.
+            </h1>
+
+            <h2 class="hero-subtitle">
+              Coffee Calani • Micro-lotes de Especialidad 100% Arábica
+            </h2>
+
+            <p class="hero-description">
+              En las laderas tropicales de <strong>San José, Cochabamba</strong>, cultivamos y seleccionamos 
+              granos de estricta altura bajo la sombra del bosque nativo. Como productores y exportadores bolivianos, 
+              llevamos la pureza de nuestros micro-lotes tanto al mercado nacional (La Paz, Santa Cruz, Sucre y todo el país) 
+              como a tostadurías internacionales de Europa, Norteamérica y Asia, garantizando comercio directo, 
+              trazabilidad impecable y una experiencia en taza con puntajes superiores a 86–89 puntos SCA.
+            </p>
+
+            <!-- Minimalist Stats Strip -->
+            <div class="hero-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Variedad Botánica</span>
+                <span class="spec-val">100% Arábica</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Procesos de Finca</span>
+                <span class="spec-val">Lavado, Honey & Natural</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Distribución</span>
+                <span class="spec-val">Nacional & Global</span>
+              </div>
+            </div>
+
+            <!-- Clean Action Buttons -->
+            <div class="hero-cta-group">
+              <a href="#catalogo" class="btn-primary">
+                <i class="fas fa-arrow-down"></i> Explorar Catálogo
+              </a>
+              <a href="https://wa.me/59167992051?text=Hola%20Coffee%20Calani,%20deseo%20hacer%20un%20pedido%20de%20caf%C3%A9" target="_blank" class="btn-whatsapp-outline">
+                <i class="fab fa-whatsapp"></i> Pedir por WhatsApp (67992051)
+              </a>
+              <a href="#eventos" class="btn-secondary">
+                <i class="fas fa-trophy"></i> Trayectoria & Eventos
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Minimalist Gallery Packaging Showcase -->
+          <div class="hero-gallery-wrap">
+            <div class="gallery-inner-frame">
+              <span class="cottage-badge-floating">
+                <i class="fas fa-leaf"></i> Lote Presidencial 89+ SCA
+              </span>
+              <img src="assets/images/mockup_bag.jpg" alt="Bolsa oficial Coffee Calani Café de Especialidad" class="bag-artwork-img">
+              <span class="cottage-badge-bottom">
+                <i class="fas fa-check-circle" style="color:var(--pastel-green-deep);"></i> Empaque Válvula Bilaminado
+              </span>
+            </div>
+            <p class="gallery-caption">
+              Edición Oficial • San José, Cochabamba • Tueste de Especialidad
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COTTAGECORE BOTANICAL INTRO (DE LA TIERRA A LA TAZA)
+         ========================================================================== -->
+    <section class="cottage-intro-strip" id="finca">
+      <div class="container">
+        <div class="intro-strip-card">
+          
+          <div class="intro-image-grid">
+            <img src="assets/images/finca_real_calani.jpg" alt="Cafetales de altura en Finca San José, Cochabamba" class="intro-img">
+            <img src="assets/images/cozy_coffee_mug.jpg" alt="Taza de café humeante de especialidad" class="intro-img">
+          </div>
+
+          <div class="intro-text-side">
+            <div class="label-tracking" style="margin-bottom:8px;">Filosofía de Finca</div>
+            <h3>El silencio de la montaña, la nobleza del café.</h3>
+            <p>
+              Nuestra labor en San José comienza antes del amanecer. Respetamos los tiempos de la naturaleza: 
+              cosecha manual de cerezas en su maduración perfecta, fermentaciones controladas en tanques herméticos 
+              y secado lento en camas elevadas bajo el sol andino-amazónico. Cada lote lleva la impronta de un ecosistema vivo.
+            </p>
+            <div class="botanical-checklist">
+              <div class="checklist-item"><i class="fas fa-feather-pointed"></i> Cosecha selectiva grano a grano sin mecanización</div>
+              <div class="checklist-item"><i class="fas fa-feather-pointed"></i> Aguas puras de vertiente andina en el beneficio</div>
+              <div class="checklist-item"><i class="fas fa-feather-pointed"></i> Trazabilidad total de micro-lote desde el árbol a la taza</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: EVENTOS & CONCURSOS (EDITORIAL CARDS)
+         ========================================================================== -->
+    <section class="events-section" id="eventos">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <div class="label-tracking" style="margin-bottom:10px;">Trayectoria & Calendario</div>
+          <h2 class="section-heading">Eventos, Concursos y Distinciones</h2>
+          <p class="section-subheading">
+            Los escenarios donde el productor de Coffee Calani ha competido y las próximas ferias internacionales donde llevaremos el café boliviano.
+          </p>
+        </div>
+
+        <!-- Minimalist Filter Pills -->
+        <div class="event-filter-nav">
+          <button type="button" class="event-filter-pill active" onclick="filterEvents('todos', this)">
+            Todos los Eventos
+          </button>
+          <button type="button" class="event-filter-pill" onclick="filterEvents('concursos', this)">
+            🏆 Concursos y Premios
+          </button>
+          <button type="button" class="event-filter-pill" onclick="filterEvents('proximos', this)">
+            📅 Próximos Eventos & Ferias
+          </button>
+          <button type="button" class="event-filter-pill" onclick="filterEvents('ferias', this)">
+            ☕ Mesas de Cata & Finca
+          </button>
+        </div>
+
+        <!-- Events Grid (populated dynamically by app.js) -->
+        <div class="events-editorial-grid" id="events-grid-container">
+          <!-- Rendered by app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: CATALOGO DE 5 PRODUCTOS DE CAFE (MINIMALIST CARDS)
+         ========================================================================== -->
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <div class="label-tracking" style="margin-bottom:10px;">Colección de Finca San José</div>
+          <h2 class="section-heading">Nuestros 5 Cafés de Especialidad</h2>
+          <p class="section-subheading">
+            Cinco perfiles sensoriales de estricta altura. Selecciona la presentación y la molienda ideal para tu método.
+          </p>
+        </div>
+
+        <!-- Products Grid (5 coffees rendered dynamically by app.js) -->
+        <div class="products-minimal-grid" id="products-grid-container">
+          <!-- Rendered by app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: EXPORTACION & SERVICIOS AL POR MAYOR
+         ========================================================================== -->
+    <section class="export-minimal-section" id="exportacion">
+      <div class="container">
+        <div class="export-box-card">
+          
+          <div class="export-info-side">
+            <span class="tag-pill tag-pill-sage" style="margin-bottom:14px;">
+              <i class="fas fa-earth-americas"></i> Comercio Directo & Exportación
+            </span>
+            <h2>Exportamos Café Boliviano en Todo el País y al Exterior</h2>
+            <p>
+              Atendemos de manera personalizada a cafeterías de especialidad, tostadurías artesanales, distribuidores 
+              e importadores internacionales. Ofrecemos disponibilidad tanto en <strong>café verde en sacos GrainPro</strong> 
+              como en <strong>café tostado en empaques valvulados bilaminados</strong> de alta barrera con ficha técnica certificada.
+            </p>
+
+            <div class="export-columns-grid">
+              <div class="export-col-item">
+                <h4>Cobertura Bolivia</h4>
+                <p>Despachos diarios a La Paz, Santa Cruz, Sucre, Tarija, Oruro, Potosí, Beni y Pando.</p>
+              </div>
+              <div class="export-col-item">
+                <h4>Exportación Global</h4>
+                <p>Envíos aéreos y marítimos con certificaciones fitosanitarias y documentación aduanera.</p>
+              </div>
+              <div class="export-col-item">
+                <h4>Precios Mayoristas</h4>
+                <p>Escalas competitivas por volumen directo del productor sin intermediarios.</p>
+              </div>
+              <div class="export-col-item">
+                <h4>Trazabilidad SCA</h4>
+                <p>Curvas de tueste, protocolos de cata y humedad de lote auditados.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:12px;">
+              <button type="button" class="btn-primary" onclick="inquireExportWhatsApp()">
+                <i class="fab fa-whatsapp"></i> Cotizar Exportación (67992051)
+              </button>
+              <a href="#catalogo" class="btn-secondary">
+                <i class="fas fa-eye"></i> Ver Micro-lotes
+              </a>
+            </div>
+          </div>
+
+          <!-- Cultural Identity Seal -->
+          <div class="heritage-seal-frame">
+            <img src="assets/images/logo_brand.jpg" alt="Iconografía ancestral Coffee Calani" class="heritage-logo-img">
+            <h3>Herencia Andino-Amazónica</h3>
+            <p>
+              El jaguar de las selvas subtropicales y el cóndor de las altas cumbres custodian el origen de Coffee Calani en Cochabamba.
+            </p>
+            <div style="margin-top:14px; font-size:0.84rem; font-weight:700; color:var(--pastel-green-deep);">
+              <i class="fas fa-phone"></i> Contacto Exportación: +591 67992051
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: REDES SOCIALES & CONTACTO DIRECTO
+         ========================================================================== -->
+    <section class="social-minimal-section" id="contacto">
+      <div class="container">
+        <div class="social-card-minimal">
+          <div class="label-tracking" style="margin-bottom:10px;">Atención Directa</div>
+          <h2>Conéctate con Coffee Calani</h2>
+          <p>
+            Sigue de cerca las temporadas de floración y cosecha en San José, Cochabamba, infórmate sobre nuestras próximas 
+            participaciones en ferias y contáctanos directamente para coordinar tus pedidos.
+          </p>
+
+          <div class="social-pills-row">
+            <a href="https://wa.me/59167992051?text=Hola%20Coffee%20Calani,%20quisiera%20conversar%20sobre%20sus%20caf%C3%A9s" target="_blank" class="social-pill social-wa-pill">
+              <i class="fab fa-whatsapp"></i> WhatsApp: 67992051
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-pill">
+              <i class="fab fa-instagram"></i> Instagram @coffeecalani
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-pill">
+              <i class="fab fa-facebook-f"></i> Facebook Coffee Calani
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="social-pill">
+              <i class="fab fa-tiktok"></i> TikTok @coffeecalani
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-pill">
+              <i class="fab fa-youtube"></i> Canal Oficial
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER (EDITORIAL MINIMALIST)
+       ========================================================================== -->
+  <footer class="site-footer-minimal">
+    <div class="container">
+      <div class="footer-columns">
+        
+        <div class="footer-col">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+            <img src="assets/images/logo_brand.jpg" alt="Coffee Calani" style="width:38px; height:38px; border-radius:50%; object-fit:cover; border:1px solid var(--hairline-border);">
+            <h4 style="margin-bottom:0; font-size:1.3rem;">COFFEE CALANI</h4>
+          </div>
+          <p>
+            Café de Especialidad 100% Arábica de Altura. Cosechado y procesado de forma artesanal en San José, Cochabamba, Bolivia. 
+            Calidad de exportación con respeto por la tierra y el productor.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#inicio">Inicio & Origen</a></li>
+            <li><a href="#eventos">Eventos & Concursos de Café</a></li>
+            <li><a href="#catalogo">Catálogo de 5 Micro-lotes</a></li>
+            <li><a href="#exportacion">Exportación Nacional y Global</a></li>
+            <li><a href="#contacto">Contacto & Pedidos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto Oficial</h4>
+          <p><i class="fab fa-whatsapp" style="color:var(--pastel-green-deep); margin-right:8px;"></i> <strong>WhatsApp Pedidos:</strong> +591 67992051</p>
+          <p><i class="fas fa-phone" style="color:var(--pastel-terracotta); margin-right:8px;"></i> <strong>Finca:</strong> 63907726 / 67992051</p>
+          <p><i class="fas fa-location-dot" style="color:var(--pastel-green-deep); margin-right:8px;"></i> <strong>Ubicación:</strong> San José, Cochabamba - Bolivia</p>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright">
+        © 2026 Coffee Calani • Todos los derechos reservados. Café de Especialidad boliviano de exportación.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Minimalist WhatsApp Pill -->
+  <div class="floating-whatsapp-widget">
+    <a href="https://wa.me/59167992051?text=Hola%20Coffee%20Calani,%20quisiera%20pedir%20caf%C3%A9%20de%20especialidad" target="_blank" class="whatsapp-pill-btn" aria-label="Escribir por WhatsApp al 67992051">
+      <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i>
+      <span>Pedir por WhatsApp (67992051)</span>
+    </a>
+  </div>
+
+  <!-- Shopping Cart Drawer (Minimalist Pastel) -->
+  <div class="cart-overlay" id="cart-drawer-overlay">
+    <aside class="cart-drawer" role="dialog" aria-labelledby="cart-title-id">
+      
+      <div class="cart-header">
+        <h3 class="cart-title" id="cart-title-id">
+          <i class="fas fa-bag-shopping" style="color:var(--pastel-green-deep); font-size:1.1rem;"></i>
+          <span>Canasta de Café</span>
+        </h3>
+        <button type="button" class="cart-close-btn" onclick="closeCartDrawer()" aria-label="Cerrar canasta">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="cart-items-body" id="cart-items-container">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-summary-line">
+          <span>Subtotal:</span>
+          <strong id="cart-subtotal">0 Bs.</strong>
+        </div>
+        <div class="cart-summary-line">
+          <span>Empaque Hermético Especial:</span>
+          <strong style="color:var(--pastel-green-deep);">Incluido</strong>
+        </div>
+        <div class="cart-summary-total">
+          <span>Total Estimado:</span>
+          <span id="cart-total">0 Bs.</span>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <button type="button" class="btn-primary" style="width:100%; justify-content:center;" onclick="checkoutViaWhatsApp()">
+            <i class="fab fa-whatsapp"></i> Finalizar Pedido por WhatsApp
+          </button>
+          
+          <div style="display:flex; gap:8px;">
+            <button type="button" class="btn-secondary" style="flex:1; justify-content:center; font-size:0.82rem;" onclick="clearCart()">
+              Vaciar
+            </button>
+            <button type="button" class="btn-secondary" style="flex:1; justify-content:center; font-size:0.82rem;" onclick="closeCartDrawer()">
+              Seguir Viendo
+            </button>
+          </div>
+        </div>
+
+        <p style="text-align:center; font-size:0.75rem; color:var(--text-muted); margin-top:12px;">
+          <i class="fas fa-lock"></i> El desglose de tu pedido se enviará directamente al WhatsApp oficial (+591 67992051).
+        </p>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- Generic Modal (Eventos & Ficha Sensorial SCA) -->
+  <div class="modal-overlay" id="generic-modal-overlay">
+    <div class="modal-clay-content">
+      <button type="button" class="cart-close-btn" style="position:absolute; top:20px; right:20px; z-index:10;" onclick="closeGenericModal()" aria-label="Cerrar ventana">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="generic-modal-body">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
